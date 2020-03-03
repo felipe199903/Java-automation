@@ -23,7 +23,7 @@ public class CrunchifyCommandJava {
 		printOutput errorReported, outputMessage;
  
 		try {
-			Process proc = rt.exec("mkdir /Users/fschorles/Desktop/new-folder");
+			Process proc = rt.exec("mkdir /mnt/c/Users/fschorles/git/Java-automation/AutomationLinux/new-folder");
 			errorReported = rte.getStreamWrapper(proc.getErrorStream(), "ERROR");
 			outputMessage = rte.getStreamWrapper(proc.getInputStream(), "OUTPUT");
 			errorReported.start();
@@ -33,7 +33,7 @@ public class CrunchifyCommandJava {
 		}
  
 		try {
-			Process proc = rt.exec("ls -ltra /Library");
+			Process proc = rt.exec("ls /mnt/c/Users/fschorles/git/Java-automation/AutomationLinux/");
 			errorReported = rte.getStreamWrapper(proc.getErrorStream(), "ERROR");
 			outputMessage = rte.getStreamWrapper(proc.getInputStream(), "OUTPUT");
 			errorReported.start();
