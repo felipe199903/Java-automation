@@ -1,3 +1,3 @@
-# Java-automation
+# WSL - Windows Subsystem for Linux (Java)
 
-Automation Java for Linux shell. 
+Automation Java for Windows Subsystem shell. 
